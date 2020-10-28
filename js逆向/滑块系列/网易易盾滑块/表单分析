@@ -1,0 +1,57 @@
+//网址为 https://live.v.wo.cn/platform/ytpxz/ttdraw.html
+//滑块前
+id: fc142f05d73646abb7738911d1c36ce3
+fp: KKzWZDmqCf6uwlV587q5MY8TuVYr7CnICQYDhmmwpl35pazd/n9neNr4aSYt+AQSnoOi1tbrM/RvBYxw9w8qhW9X/InhD7/hvifw\s8Xzgneiej16LEQY8gpzb30YRSySxdH4xSGifJrCMxPs6P9o/8Qn1nIne9gwUbqneIhe8LHQ67J:1596782763812
+https: true
+type: undefined
+version: 2.14.1
+dpr: 1
+dev: 1
+变 cb: WJihN4pJjR7siRYL68LXW1BJf2Wc7RM5qxagUXbzoXKfQi29hh/H42DUIEJ/YJ+5
+ipv6: false
+runEnv: 10
+group:
+scene:
+width: 0
+token:
+referer: https://live.v.wo.cn/platform/ytpxz/ttdraw.html
+callback: __JSONP_zjdpoqh_0
+
+"live.v.wo.cn"
+
+
+//滑块后
+id: fc142f05d73646abb7738911d1c36ce3
+token: 43323744bbea496e8c5fa8946930f7c9
+acToken: 9ca17ae2e6ffcda170e2e6eeb8ef5ef1effe8cc653948a8ab7d45f828b9ebaaa54b29da5a6d15b959de1aae22af0feaec3b92ab7abbb88f1458faba3a2dc5e828f8eb3c44ba1f19893c23c92b0f78ec57e9495ee9e
+data: {
+    "d":"sf8DHtEHlBHbwVfWHlgFBT5zdur6hU9t+xU9P7Q7rW2b67TafRngD\\BaRrcrkiWbWUpSWPSSkcuLlVLzHDP/BSVM1J/YeRmkXulcDnuQnEPmjGM60fP2hUXtwH            \\0nfEzGWkruW1yg8rsadiURHUcc\\WeM7nlmpRdqABc6LwknQ4LA2iZYbYiGRi2KFcd1SrrQluLwnmS4CeulepBPA                          +hxu0w8Vd5jRdBfPlcQ41gSU4UZItzn5uf7gDe46EtGsRzepVdYBsrRe5LkDB+8PZd6N6rQ4SPmGjhl\\gLBb4exKfle2iXA7+8DvUV74O8+UvWoCnXo1St /92IX0QgWiNHy1SDlwhmi5SW8l0wct+e+7pkNd/xqF6cLY6PnLqbinGQDlC7aK0SIJPPqI/8w2ZpdA33",
+    "m":"",
+    "p":"Q1qfqr5Kp1Dj4Oa\\Yf781O1Gzrl16QFFMR1Bw55XdHK5LT71fmFe+p33",
+    "ext":"5rEtUZPi/IAjXFUtJnp9G10hmSzWcUeH"
+}
+width: 310
+type: 2
+version: 2.14.1
+cb: pvP2ku7AMe9HZseHMs85VK8C2BTPLIOLHgycANVYYSfrsTAhejFmPzS8YmM2pA\v
+extraData:
+runEnv: 10
+referer: https://live.v.wo.cn/platform/ytpxz/ttdraw.html
+callback: __JSONP_b7mp586_11
+
+//是否会出现n>t的情况
+sample: function(e, t) {
+            var n = e.length;
+            if (n <= t)
+                return e;
+            for (var i = [], r = 0, o = 0; o < n; o++)
+                o >= r * (n - 1) / (t - 1) && (i.push(e[o]),
+                r += 1);
+            return i
+        }
+u = "ca6dc431a2c843f19cce0a5e222c8521"
+vIIUngXU/pOnip33
+
+h(p("ca6dc431a2c843f19cce0a5e222c8521", parseInt(滑块最左侧坐标, 10) / 310 * 100 + ""))
+
+[[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],[4, 0, 223],]

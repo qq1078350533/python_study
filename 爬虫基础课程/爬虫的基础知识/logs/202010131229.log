@@ -1,0 +1,4 @@
+2020-10-13 12:29:52,503 - demo.py[line:26] - INFO: aa
+2020-10-13 12:29:52,503 - demo.py[line:27] - WARNING: wwww
+2020-10-13 12:29:52,504 - demo.py[line:28] - ERROR: saa
+2020-10-13 12:29:52,504 - demo.py[line:29] - CRITICAL: sdad

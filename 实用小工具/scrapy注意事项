@@ -1,0 +1,44 @@
+# -*- coding:utf-8 -*-
+"""
+作者：snackdeng
+日期：2020/07/01
+"""
+1.scrapy常用配置
+    COOKIES_DEBUG默认为False表示日志中不显示cookie的传递过程
+    LOG_LEVEL = "INFO"  设置日志等级
+    LOG_FILE = "路径"  输出日志
+
+2.在设置中添加splash中间件
+    渲染服务的url
+    SPLASH_URL = 'http://127.0.0.1:8050'
+    下载中间件
+    DOWNLOADER_MIDDLEWARES = {
+       'scrapy_splash.SplashCookiesMiddleware': 723,
+       'scrapy_splash.SplashMiddleware': 725,
+       'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+    }
+    去重过滤器
+    DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+    使用splash 的http缓存
+    HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+
+3.scrapyd注意事项
+    在服务器上 先开启服务 scrapyd
+    在客户端
+        先改写scrapy文件夹中的scrapy.cfg  在[deploy:ershoufang]  # :后面写部署名 把url注释释放
+        上传代码 scrapyd-deploy 部署名 -p 项目名
+        启动爬虫 curl http://localhost:6800/schedule.json -d project=项目名 -d spider=爬虫文件名
+        列出爬虫 curl http://localhost:6800/listversions.json?project=myproject
+        列出爬虫项目 curl http://localhost:6800/listprojects.json
+        关闭爬虫 curl http://localhost:6800/cancel.json -d project=项目名 -d job=jobid
+
+4.监控爬虫
+    先得运行scrapyd
+    gerapy init  创建目录
+    gerapy migrate  cd到此目录下运行改命令 来初始化数据库
+    gerapy createsuperuser 设置账号密码
+    gerapy runserver  运行这个东西
+    把代码放在projects文件中即可
+
+
+

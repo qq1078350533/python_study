@@ -1,0 +1,12 @@
+1、动django服务： cd 至此目录下，然后运行：python manage.py runserver （num）（指定端口，默认8000）
+2、 表单注意事项：from标签的属性action指定提交的地址（不写默认当前地址） method请求方式（默认get）；input标签要有name属性，有的标签还需要有value；要有一个button按钮或者是type=submit的input
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+3：创建django得两种方式：pycharm里file新建django项目；cmd中先cd到存放目录下在敲djang-admin startproject 文件名
+4:创建django应用：cd至django目录，cmd执行 python manage.py startapp 应用名称
+5:创建完之后需要在seting中INSTALLED_APPS添加子应用'app名称.apps.BookConfig'
+6:创建管理员账号密码：python manage.py createsuperuser
+>>>>>>> 60b95f6... 同步更新20201028
+>>>>>>> d0f0af6... 同步更新20201028

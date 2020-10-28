@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jichu_study.iml" filepath="$PROJECT_DIR$/jichu_study.iml" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+>>>>>>> 60b95f6... 同步更新20201028
+>>>>>>> d0f0af6... 同步更新20201028
+    </modules>
+  </component>
+</project>

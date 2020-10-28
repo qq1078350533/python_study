@@ -1,0 +1,83 @@
+# 创建一个库
+use person
+# 创建一个集合（表) 必须有视图集合才存在
+db.createCollection('student')
+#显示该集合中所有集合
+show collections
+
+
+
+# 创建一条数据
+# 如果id相同则添加不进去
+db.student.insert({'name':'刘备'})
+#如果id相同，会替换他（更新）
+db.student.save({'name':'孙权'})
+# 创建多条数据给一个列表 （只会进入第一条数据db.student.save({'name':'曹植'},{'name':'曹丕'},{'name':'曹爽'},{'name':'曹操'})）
+db.student.save([{'name':'曹丕'},{'name':'曹爽'},{'name':'曹操'}])
+# 支持json输入
+for(i=0;i<5;i++){db.student.insert({'name':'张飞','age':i})}
+张飞	0
+张飞	1
+张飞	2
+张飞	3
+张飞	4
+
+
+
+# 改数据 （改数据要全局修改 这样只会显示年龄，刘备却消失了 db.student.update({'name':'刘备'}, {'age':'28'})）
+db.student.update({'name':'刘备'}, {'age':'28','name':'刘备'})
+# 改数据  $set:就只要修改要改的部分，不需要全局修改
+db.student.update({'name':'曹操'},{$set:{'age':30}})
+# 修改多条数据
+db.student.update({'name':'张飞'},{$set:{'age':26}},{multi:true})
+张飞	26
+张飞	26
+张飞	26
+张飞	26
+张飞	26
+
+
+
+
+# 删除数据 （所有名字叫张飞的）
+db.student.remove({'name':'张飞'},{multi:true})
+# 删除数据 删除一条数据
+db.student.remove({'name':'刘备'},{justOne:true})
+# 删除所有数据
+db.student.remove({})
+
+# 查询数据（student所有的数据）
+db.student.find({'name':'刘备'})
+db.getCollection('student').find()
+db.getCollection('student').find({})
+db.student.find()
+db.student.find({})
+# 查询第一条数据
+db.student.findOne({'name':'刘备'})
+# 运算符
+$lt    小于             db.student.find({'age':{$lt:'30'}})
+$lte   小于或等于        db.student.find({'age':{$lte:'30'}})
+$gt    大于             db.student.find({'age':{$gt:'30'}})
+$gte   大于或等于        db.student.find({'age':{$gte:'30'}})
+$ne    不等于            db.student.find({'age':{$ne:'30'}})
+$or    或                db.student.find($or:[{'name':'刘备'},{'age':'30'}])  db.student.find($or:[{'name':'刘备'},{'age':{$lt:'30'}}])    db.student.find({'country':{$in:['蜀国','吴国']}})
+$in    在范围内          db.student.find({'age':{$lt:'30'}})  db.student.find({'country':{$in:['蜀国','吴国']}})
+$nin   不在范围内        db.student.find({'age':{$lt:'30'}})
+# 正则匹配    格式为：  /正则表达式/
+db.student.find({'name':'/曹/'})
+db.student.find({'name':{$regex:'^zs'}})
+# 自定义查询
+db.student.find({$where:function(){return this.age>20}})
+db.student.find({$where:function(){return this.age==20}})
+
+# limit 用于读取指定数量的文档     两者可以一起使用skip的优先级高于limit
+db.student.find().limit(num)
+# skip 用于跳过指定数量的文档
+db.student.find().skip(num)
+# 排序 1为升序 -1为降序
+db.student.find().sort({'age':'-1'})
+db.student.find().sort(1)
+db.student.find().sort(-1)
+# 统计数据
+db.student.find().count()
+db.student.find({'country':'吴国'}).count()

@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+import scrapy
+from scrapy_splash import SplashRequest
+
+
+class WithSplashSpider(scrapy.Spider):
+    name = 'with_splash'
+    allowed_domains = ['baidu.com']
+    start_urls = ['https://www.baidu.com/s?wd=python']
+
+    def start_requests(self):
+        yield SplashRequest(
+            url=self.start_urls[0],
+            callback=self.parse,
+            args={'wait': 10},   # 最大超时时间 单位：秒
+            endpoint="render.html"
+        )
+
+
+
+    def parse(self, response):
+        with open("with_splash.html", 'wb') as f:
+            f.write(response.body)

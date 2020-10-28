@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ccf33794-53ba-4441-ad3d-b2ce4c1461d3" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/python练习题.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django项目/.idea/Django项目.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django项目/logindemo/.idea/logindemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Django项目/webtest/.idea/webtest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flas框架/flask1/.idea/flask1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../flas框架/flask基础/.idea/flask基础.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python_email/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python_email/send_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/01-python基础/.idea/01-python基础.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/02_分支/.idea/02_分支.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/03_循环/.idea/循环.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/04_函数/.idea/函数.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/05_高级数据类型/.idea/05_高级数据类型.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/06_名片管理/.idea/06_名片管理.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/07_语法进阶/.idea/07_语法进阶.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/100套练习题/.idea/100套练习题.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/Hangman猜字游戏/.idea/Hangman猜字游戏.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/发布模块/.idea/发布模块.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/基础结尾练习/.idea/基础结尾练习.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/异常/.idea/异常.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/模块/.idea/模块.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/面对对象/.idea/面对对象.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/面对对象__多态/.idea/面对对象__多态.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../书籍学习/python基础课程/飞机大战/.idea/飞机大战.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../数据库基础教程/MYSQL/.idea/MYSQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/.idea/爬虫基础课程.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/爬虫/.idea/爬虫.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/爬虫/12306抢票/.idea/12306抢票.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/爬虫/scrapy框架/.idea/scrpy框架练习.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/爬虫的基础知识/.idea/爬虫的基础知识.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/爬虫的基础知识/多任务/.idea/多任务.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/网络/.idea/网络.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../爬虫基础课程/网络/网络UDP/.idea/网络UDP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../长沙紫檀数据科技有限公司/.idea/长沙紫檀数据科技有限公司.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../爬虫基础课程/爬虫/英雄联盟壁纸" beforeDir="false" afterPath="$PROJECT_DIR$/../../爬虫基础课程/爬虫/英雄联盟壁纸" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1eX4BGtpWO1h0OAmmIZviK0Vkm3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.Demo01Method">
+    <configuration name="Demo01Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.day04.demo02.Demo01Method" />
+      <module name="basic-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.day04.demo02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.day04.demo01.HelloWorld" />
+      <module name="basic-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.day04.demo01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="deng" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../Program Files/Java/jre1.8.0_251" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="basic-code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo01Method" />
+        <item itemvalue="Application.HelloWorld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccf33794-53ba-4441-ad3d-b2ce4c1461d3" name="默认的" comment="" />
+      <created>1594454466533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594454466533</updated>
+      <workItem from="1594454468444" duration="192000" />
+      <workItem from="1594455994614" duration="63000" />
+      <workItem from="1594456081502" duration="471000" />
+      <workItem from="1594456583590" duration="1252000" />
+      <workItem from="1594459680468" duration="102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="472" y="0" width="894" height="728" key="#Project_Structure" timestamp="1594457189446">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="472" y="0" width="894" height="728" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1594457189446" />
+    <state x="352" y="0" width="675" height="728" key="#Unnamed" timestamp="1594456206153">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="352" y="0" width="675" height="728" key="#Unnamed/0.0.1366.728@0.0.1366.728" timestamp="1594456206153" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594457795566">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594457795566" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1594456869168">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594456869168" />
+    <state x="96" y="0" width="1201" height="728" key="SettingsEditor" timestamp="1594459781394">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="96" y="0" width="1201" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594459781394" />
+    <state x="213" y="0" key="new project wizard" timestamp="1594454654629">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1594454654629" />
+  </component>
+</project>

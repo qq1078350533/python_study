@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d0f0af6... 同步更新20201028
+"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=&dotcomFCReturnMemberPrice=false"
+"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=&dotcomFCReturnMemberPrice=false"
+{"hjid": "190ff8e4-c1e2-4437-b0c7-c8301f805452"}
+"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=3d7e8eb2-7f99-4811-a76e-e3429f32585d&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=81470aa0-4865-4ca5-8a56-529fdd0e7cbc&dotcomFCReturnMemberPrice=false"
+"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=575f92f2-981f-4351-9d70-dbc379206845&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=f1701f77-4202-448a-b7ae-b9ea1fc77bed&dotcomFCReturnMemberPrice=false"
+"s_sq=jetstarprd%3D%2526pid%253D%25252Fsearch-flights%25252Fpre-flight-search%2526pidt%253D1%2526oid%253D%2525E9%252580%252589%2525E6%25258B%2525A9%2525E9%2525A3%25259E%2525E8%2525A1%25258C%2525E6%252597%2525B6%2525E9%252597%2525B4%2526oidt%253D3%2526ot%253DSUBMIT"
+<<<<<<< HEAD
+"s_sq=jetstarprd%3D%2526pid%253D%25252Fsearch-flights%25252Fpre-flight-search%2526pidt%253D1%2526oid%253D%2525E9%252580%252589%2525E6%25258B%2525A9%2525E9%2525A3%25259E%2525E8%2525A1%25258C%2525E6%252597%2525B6%2525E9%252597%2525B4%2526oidt%253D3%2526ot%253DSUBMIT"
+=======
+"s_sq=jetstarprd%3D%2526pid%253D%25252Fsearch-flights%25252Fpre-flight-search%2526pidt%253D1%2526oid%253D%2525E9%252580%252589%2525E6%25258B%2525A9%2525E9%2525A3%25259E%2525E8%2525A1%25258C%2525E6%252597%2525B6%2525E9%252597%2525B4%2526oidt%253D3%2526ot%253DSUBMIT"
+=======
+import time
+ts = str(int(time.time()))
+_rticket = str(int(time.time()*1000))
+print(ts,_rticket)
+>>>>>>> 60b95f6... 同步更新20201028
+>>>>>>> d0f0af6... 同步更新20201028

@@ -1,0 +1,17 @@
+创建hook流程
+新建项目，在app新建lib文件放入api-82.jar 右击Add As Library
+在此目录下的build.gradle 最下面添加compileOnly files("lib/api-82.jar")
+在res中的AndroidManifest.xml中的application增加
+<meta-data
+                android:name="xposedmodule"
+                android:value="true" />
+        <meta-data
+                android:name="xposeddescription"
+                android:value="my name is snackdeng"/>
+        <meta-data
+            android:name="xposedminversion"
+            android:value="53" />
+    </application>
+在src.main.java.com...下面创建类HelloXp写hook代码
+在main右击增加入口右击选择Folder选择Assets Folder
+

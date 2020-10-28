@@ -1,0 +1,2 @@
+INFO - 2020-07-01 18:35:03,075 - process: 9944 - scheduler.py - gerapy.server.core.scheduler - 102 - scheduler - successfully synced task with jobs
+INFO - 2020-07-01 18:45:53,840 - process: 9944 - build.py - gerapy.server.core.build - 24 - build - successfully build project lianjia to egg file D:\Users\snackdeng\Desktop\python练习题\爬虫基础课程\爬虫的基础知识\gerapy\projects\lianjia\lianjia-1.0-py3.7.egg
