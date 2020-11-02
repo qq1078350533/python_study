@@ -30,8 +30,10 @@ class deng():
         # options.add_argument("--proxy--server=127.0.0.1:8080")
         # 添加UA
         ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'
+        chrome_path = r"C:\Program Files\Google\Chrome\Application\chromedriver.exe"
+
         options.add_argument('user-agent=' + ua)
-        self.driver = webdriver.Chrome(options=options)
+        self.driver = webdriver.Chrome(options=options,executable_path=chrome_path)
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver,20)
         self.email = EMAIL
