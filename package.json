@@ -1,7 +1,0 @@
-{
-  "name": "python_study",
-  "version": "1.0.0",
-  "dependencies": {
-    "jsdom": "^16.3.0"
-  }
-}
