@@ -10,3 +10,5 @@
 6:创建管理员账号密码：python manage.py createsuperuser
 >>>>>>> 60b95f6... 同步更新20201028
 >>>>>>> d0f0af6... 同步更新20201028
+
+pip freeze > requirements.txt   设置python的所有模块列表
