@@ -1,6 +1,13 @@
-from redis import StrictRedis,ConnectionPool
-# pool = ConnectionPool(host='localhost',port=6379,db=0,password='snackdeng')
-#redis = StrictRedis(connection_pool=pool)
-redis = StrictRedis(host='localhost',port=6379,db=0,password='snackdeng')
-redis.set('name','Bob')
+from redis import StrictRedis
+
+# 创建redis连接对象
+redis = StrictRedis(host='192.168.80.128', port=6379, decode_responses=True)
+
+# 存储string对象
+redis.set('name', 'Bob')
+
+# 读取
 print(redis.get('name'))
+
+# 删除
+print(redis.delete('name'))
