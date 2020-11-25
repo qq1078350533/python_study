@@ -10,6 +10,8 @@
 
 # -*- coding：utf-8 -*-
 import base64
+import binascii
+
 import rsa
 from Cryptodome.Cipher import AES
 from pyDes import des, CBC, PAD_PKCS5
@@ -172,7 +174,7 @@ class USE_DES:
         iv = self.iv
         k = des(secret_key, CBC, iv, pad=None, padmode=PAD_PKCS5)
         en = k.encrypt(text, padmode=PAD_PKCS5)
-        return en
+        return binascii.b2a_hex(en)
 
     def descrypt(self, text):
         """
@@ -183,7 +185,7 @@ class USE_DES:
         secret_key = self.key
         iv = self.iv
         k = des(secret_key, CBC, iv, pad=None, padmode=PAD_PKCS5)
-        de = k.decrypt(text, padmode=PAD_PKCS5)
+        de = k.decrypt(binascii.a2b_hex(text), padmode=PAD_PKCS5)
         return de.decode()
 
 
