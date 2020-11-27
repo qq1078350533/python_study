@@ -1,0 +1,26 @@
+syntax = "proto3";  // 语法协议
+package pack.base;  // 命名空间
+
+// 枚举，登录类型
+enum LoginType{
+    GUEST = 0;
+    APPLE = 1;
+    RENREN = 2;
+    FACEBOOK = 3;
+    KAIXIN = 4;
+    GAMECENTER = 5;
+    SINA = 6;
+    WEICHAT = 7;
+    ALIPAY = 8;
+}
+
+message LoginReq{
+    string sig = 1;
+    LoginType login_type = 2;
+    string openid = 3;
+    string channel = 4;
+    string version = 5;
+    string device_id = 6;
+    string mac_id = 7;
+    repeated int32 login_num = 8;
+}

@@ -1,21 +1,42 @@
+window = global;
 
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
+window = dom.window;
+var document = dom.window.document;
+window.document = document;
 
-navigator = {
-    appCodeName: "Mozilla",
-    appName: "Netscape",
-    appVersion: "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36",
-    cookieEnabled: true,
-    deviceMemory: 8,
-    doNotTrack: null,
-    language: "zh-CN",
-    product: "Gecko",
-    maxTouchPoints: 0,
-    productSub: "20030107",
-    platform: "Win32",
-    userAgent: "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 QIHU 360EE",
-    vendor: "Google Inc.",
-    vendorSub: "",
-}
+// location = {
+//     assign : {
+//         name: "assign",
+//     },
+//     hash: "",
+//     host: "www.toutiao.com",
+//     hostname: "www.toutiao.com",
+//     href: "https://www.toutiao.com/",
+//     origin: "https://www.toutiao.com",
+//     pathname: "/",
+//     port: "",
+//     protocol: "https:",
+// }
+//
+// navigator = {
+//     appCodeName: "Mozilla",
+//     appName: "Netscape",
+//     appVersion: "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36",
+//     cookieEnabled: true,
+//     deviceMemory: 8,
+//     doNotTrack: null,
+//     language: "zh-CN",
+//     product: "Gecko",
+//     maxTouchPoints: 0,
+//     productSub: "20030107",
+//     platform: "Win32",
+//     userAgent: "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36 QIHU 360EE",
+//     vendor: "Google Inc.",
+//     vendorSub: "",
+// }
 
 document = {
     URL: "https://www.toutiao.com/",
@@ -696,20 +717,16 @@ window.byted_acrawler && window.byted_acrawler.init({
     aid: 24,
     dfp: !0
 })
-console.log(window.byted_acrawler)
 
 
-function R(e) {
+function R() {
     var a, r;
-    var n = "".concat(location.protocol, "//").concat(location.host, "/toutiao");
-    if (false)
-        ;var i = {
-        url: n + e
+        var i = {
+        url: '/api/pc/feed/?max_behot_time=1606318372&category=__all__&utm_source=toutiao&widen=1&tadrequire=true'
     };
-
     var c = (null === (a = window.byted_acrawler) || void 0 === a ? void 0 : null === (r = a.sign) || void 0 === r ? void 0 : r.call(a, i));
-    // var c = ;
 
     return c
 }
 
+console.log(R())

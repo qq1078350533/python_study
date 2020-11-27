@@ -1,21 +1,21 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> d0f0af6... 同步更新20201028
-"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=&dotcomFCReturnMemberPrice=false"
-"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=&dotcomFCReturnMemberPrice=false"
-{"hjid": "190ff8e4-c1e2-4437-b0c7-c8301f805452"}
-"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=3d7e8eb2-7f99-4811-a76e-e3429f32585d&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=81470aa0-4865-4ca5-8a56-529fdd0e7cbc&dotcomFCReturnMemberPrice=false"
-"https://booking.jetstar.com/cn/zh/booking/search-flights?origin1=SIN&destination1=HAK&origin2=HAK&destination2=SIN&departuredate1=2020-08-16&departuredate2=2020-08-23&adults=1&children=0&infants=0&AutoSubmit=Y&currency=SGD&dotcomFCOutboundFlightId=113808786&dotcomFCOutboundFare=88.5&dotcomFCOutboundPriceShown=true&dotcomFCOutboundDepartureTime=2020-08-16T07%3A35%3A00&dotcomFCOutboundArrivalTime=2020-08-16T11%3A05%3A00&dotcomFCOutboundCorrelationId=575f92f2-981f-4351-9d70-dbc379206845&dotcomFCOutboundMemberPrice=false&dotcomFCReturnFlightId=113833785&dotcomFCReturnLowestFare=88.5&dotcomFCReturnPriceShown=true&dotcomFCReturnDepartureTime=2020-08-23T12%3A00%3A00&dotcomFCReturnArrivalTime=2020-08-23T15%3A30%3A00&dotcomFCReturnCorrelationId=f1701f77-4202-448a-b7ae-b9ea1fc77bed&dotcomFCReturnMemberPrice=false"
-"s_sq=jetstarprd%3D%2526pid%253D%25252Fsearch-flights%25252Fpre-flight-search%2526pidt%253D1%2526oid%253D%2525E9%252580%252589%2525E6%25258B%2525A9%2525E9%2525A3%25259E%2525E8%2525A1%25258C%2525E6%252597%2525B6%2525E9%252597%2525B4%2526oidt%253D3%2526ot%253DSUBMIT"
-<<<<<<< HEAD
-"s_sq=jetstarprd%3D%2526pid%253D%25252Fsearch-flights%25252Fpre-flight-search%2526pidt%253D1%2526oid%253D%2525E9%252580%252589%2525E6%25258B%2525A9%2525E9%2525A3%25259E%2525E8%2525A1%25258C%2525E6%252597%2525B6%2525E9%252597%2525B4%2526oidt%253D3%2526ot%253DSUBMIT"
-=======
-"s_sq=jetstarprd%3D%2526pid%253D%25252Fsearch-flights%25252Fpre-flight-search%2526pidt%253D1%2526oid%253D%2525E9%252580%252589%2525E6%25258B%2525A9%2525E9%2525A3%25259E%2525E8%2525A1%25258C%2525E6%252597%2525B6%2525E9%252597%2525B4%2526oidt%253D3%2526ot%253DSUBMIT"
-=======
 import time
-ts = str(int(time.time()))
-_rticket = str(int(time.time()*1000))
-print(ts,_rticket)
->>>>>>> 60b95f6... 同步更新20201028
->>>>>>> d0f0af6... 同步更新20201028
+
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+
+@app.route('/jrtt')
+def dy_test():
+    # ts = str(int(time.time()))
+    # rict = str(int(time.time() * 1000))
+    #浏览器访问不建议用get，会进行urlencode
+    url = f"https://aweme-eagle.snssdk.com/aweme/v1/feed/?type=0&max_cursor=0&min_cursor=-1&count=6&volume=0.6666666666666666&pull_type=2&need_relieve_aweme=0&filter_warn=0&req_from&is_cold_start=0&longitude=113.347588&latitude=22.991708&address_book_access=1&gps_access=1&os_api=22&device_type=Nexus%206&device_platform=android&ssmix=a&iid=3394909373733624&manifest_version_code=670&dpi=560&js_sdk_version=1.16.0.0&uuid=359320051140506&version_code=670&app_name=aweme&version_name=6.7.0&ts={ts}&openudid=80c0065ee0be4cb&device_id=1952348995336375&resolution=1440*2392&os_version=5.1&language=zh&device_brand=google&app_type=normal&ac=wifi&update_version_code=6702&aid=1128&channel=tengxun_new&_rticket={rict}"
+    # url = request.args['url'] #
+    ruslt = {
+        "url":url
+    }
+    return ruslt
+
+
+if __name__ == '__main__':
+    app.run()

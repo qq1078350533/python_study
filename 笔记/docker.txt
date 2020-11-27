@@ -1,1 +1,0 @@
-sudo docker exec -it 容器id redis-cli  运行docker里的redis客户端

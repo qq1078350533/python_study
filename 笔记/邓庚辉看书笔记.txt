@@ -45,4 +45,3 @@
 类方法：由类调用；无默认参数。
 43：报错处理：requests.exceptions.SSLError: HTTPSConnectionPool(host='www.ygdy8.net', port=443): Max retries exceeded with url: /html/gndy/dyzz/list_23_1.html (Caused by SSLError(SSLError("bad handshake: SysCallError(-1, 'Unexpected EOF')")))；解决方案开启fiddler或者charles代理即可
 44:frida调试出现object 则需要添加console.log(JSON.stringify(参数))
-45:pycharm中多行垂直选中怎么取消  shift＋alt ＋insert

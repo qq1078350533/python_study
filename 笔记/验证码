@@ -1,0 +1,10 @@
+赋值cookie
+    原生js
+        document.cookie
+    jquery
+        $.cookie()
+
+canvas  HTML5绘图元素
+
+网易滑块
+    cookie校验参数: JESSIONID-WYTXZ, l_s_ccPFCIpTB
