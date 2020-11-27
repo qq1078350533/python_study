@@ -1,0 +1,23 @@
+git init    初始化
+git status  文件状态
+git add scrapy.cfg   添加文件到缓存区
+git commit  -m "v1"  提交版本区
+git log     打印日志即版本历史
+git reset --hard 381a08728c9bec438b5e80c1ad6377cf5b8ab5c1 回滚版本号到工作区
+git reflog    打印回滚前的版本号
+git reset --hard 9f0003d    回滚到回滚之前的版本到工作区
+git reset HEAD 文件名     从缓存区到工作完成区
+git checkout -- 文件名    从工作完成区回滚到工作区
+git branch    查看分支
+git branch deng  创建deng分支
+git checkout deng  切换到deng分支
+git merge bug  在主体上合并bug分支
+ git branch -d bug  删除bug分支
+
+
+
+git remote add origin git@github.com:snackdeng/Git_Study.git    给github地址重名为origin
+git push -u origin master  仓库推送主体至github
+git push -u origin deng   从仓库推送deng分支至github
+git clone https://github.com/snackdeng/Git_Study.git   下载完整代码至工作区
+git pull origin dev	从dev分支拉取代码至工作区

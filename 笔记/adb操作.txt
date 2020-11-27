@@ -1,0 +1,8 @@
+adb devices  显示当前连接的设备
+adb shell dumpsys activity  top 获取当前活动界面信息  简单版  adb shell dumpsys activity | findstr "mFocusedActivity"
+adb shell dumpsys package [包名] 获取包信息
+adb shell dumpsys meminfo [包名] 获取内存数据
+adb shell dumpsys dbinfo [包名] 获取数据库文件
+adb shell pm list packages 列出当前所以已安装的程序包名
+adb shell pm path [包名] 获取指定程序所在的路径
+adb shell am start -D -n com.youxiang.soyoungapp/.ui.MainActivity  调试模式打开app

@@ -1,0 +1,33 @@
+ubuntu中启动mysql服务  sudo service mysql start
+
+操作数据库
+SHOW DATABASES;   展示数据库
+CREATE DATABASE 库名;   创建数据库deng01，默认编码
+CREATE DATABASE 库名 CHARACTER SET UTF8;  创建数据库并指定编码格式
+create database if not exists 库名;    deng02数据库是否存在
+SHOW CREATE DATABASE 库名;    查看创建数据库时得基本信息
+ALTER DATABASE 库名 CHARACTER SET GBK;   修改数据库指定编码为GBK
+DROP DATABASE 库名;		删除数据库
+SELECT DATABASE(); 		查看当前使用的数据库
+
+操作账户
+USE 库名;			使用数据库
+select user();			查看当前登录账户
+create user "guest"@"192.168.14.%" identified by "123";   创建一个其他用户（符合ip地址）
+权限类型：all 全部  select查  insert 写
+grant select on deng02.* to "guest"@"192.168.14.%" by "密码";      创建guest用户并且赋予查询deng02数据库下所有表权力
+
+操作表
+show tables;              查看当前数据库下的表
+create table 表名 (name char(12),age int);     创建表
+desc 表名;    	查看表结构(不详细)
+show create table 表名;   查看详细的表结构
+
+操作数据
+insert into 表名 values ("snackdeng",23);	插入一条数据
+insert into 表名 values(),();			插入多条数据
+insert into 表名 (字段) values (值);		指定表名写入字段
+
+select * from 表名;			查询数据
+update 表名 set age=100 where name="snackdeng";	修改数据
+delete from 表名 where name="snackdeng";  删除数据
