@@ -973,4 +973,4 @@ function data(rs,passwod) {
     return enPassword;
 }
 
-// console.log(data())
+console.log(data('weqeqw','qeqwqweqw'))

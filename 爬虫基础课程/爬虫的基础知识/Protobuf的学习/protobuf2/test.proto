@@ -1,0 +1,7 @@
+syntax = "proto2";
+package my;
+
+message UserInfo {
+    required string name = 1;
+    required int32 age = 2;
+}
