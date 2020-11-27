@@ -31,3 +31,4 @@ insert into 表名 (字段) values (值);		指定表名写入字段
 select * from 表名;			查询数据
 update 表名 set age=100 where name="snackdeng";	修改数据
 delete from 表名 where name="snackdeng";  删除数据
+flush privileges;     刷新权限
