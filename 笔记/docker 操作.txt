@@ -5,3 +5,19 @@ docker images  查看所有镜像
 docker rm mysql或者(id)   删除容器
 docker rmi   mysql或者(id)   删除镜像
 docker stop  mysql  停止容器
+
+
+
+打包镜像
+	项目目录下生成requirements.txt
+	在项目同目录下创建Dockerfile文件
+	编写
+		FROM python:3.7
+		ADD ./tasks_check /code
+		WORKDIR /code
+		RUN pip install -r requirements.txt -i http://server.lan:7000/simple/ --trusted-host server.lan
+		CMD ["python", "/code/manage.py", "runserver", "0.0.0.0:8080"]
+	编译成镜像
+	sudo docker build -t 镜像名字:版本号 -f Dockerfile .    解释 .是dockerfile的路径
+	运行镜像
+	sudo docker run --name 容器名字 -p 8080:8080 镜像名    解释： -p 8080是为了映射端口
