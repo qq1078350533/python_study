@@ -12,3 +12,6 @@
 >>>>>>> d0f0af6... 同步更新20201028
 
 pip freeze > requirements.txt   设置python的所有模块列表
+
+
+本地调试需要把设置中的debug设置为true， 放到服务器上跑时，设置为False

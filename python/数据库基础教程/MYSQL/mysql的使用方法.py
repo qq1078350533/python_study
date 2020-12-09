@@ -1,8 +1,8 @@
-from pymysql import *
+import pymysql
 
 def main():
     # 连接数据库
-    connection = connect(host='localhost',port=3306,user='root',password='snackdeng',charset='utf8')
+    connection = pymysql.connect(host='localhost',port=3306,user='root',password='snackdeng',charset='utf8')
 
 
     # 制造mysql的游标
