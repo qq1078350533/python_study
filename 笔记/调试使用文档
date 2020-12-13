@@ -27,6 +27,10 @@ cd进入输出目录查看.dex文件
 
 Frida -FU --no-pause -l  文件名
 
+
+
+
+
 如果用idea，，androidstudy不能下断点调试app，是smalidea的问题 idea中直接取消smalisuper的插件   androidstudio 然后在Android Studio -> Preference(windows是File -> setting) -> Editor -> file Types 里面找smali ,会发现有两个,然后改成下图这样,(去掉第一个smali自带的*.smali,给第二个smali的加上*.smali)就可以了
 
 mprop 的使用

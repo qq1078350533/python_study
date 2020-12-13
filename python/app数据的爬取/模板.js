@@ -60,10 +60,10 @@
             var class_u = Java.use('l.q.a.y.p.m');
             var a = Java.use('l.q.a.y');
             // 定位到方法  function(paraml)括号里是这个方法的参数
-            class_u.test.overload("").implementation=function(paraml){
+            class_u.test.overload("l.q.a.y").implementation=function(obj){
                 var mon = a.$new("");
                 send(mon.getInfo());
-                return this.test();
+                return this.test(mon);
             };
         });
     }
