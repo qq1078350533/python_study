@@ -1,22 +1,22 @@
 pychrm远程连接服务器并且编辑文本
   虚拟机服务器：
     sudo passwd root  输入密码
-    sudo apt openssh-server
+    sudo apt install openssh-server
     cd /etc/ssh/
     sudo vim sshd_config  打开文件，打开PermitRootLogin注释，
     sudo service ssh start
   远程服务器
-    root@ip   输入密码即可
+    ssh root@ip   输入密码即可
   在pycharm中Tools deploy点击conf   rootpath是你要操控得文件  webserver是加上ip即可
   再点击mapping映射 loclal是把远程文件放到那， 下一个是关联服务器的那个文件
   然后点击deploy中得update更新到本地
   如果需要上传，点击上传更新到服务器即可
 
-server ngnix stop/start
+server nginx stop/start
 
-/etc/ngnix/     配置文件目录
-/var/log/ngnix/   日志目录
-/usr/share/ngnix/html  默认首页目录
+/etc/nginx/     配置文件目录
+/var/log/nginx/   日志目录
+/usr/share/nginx/html  默认首页目录
 
-ngnix -s reload      重新导入配置文件
-ngnix -t     测试配置文件
+nginx -s reload      重新导入配置文件
+nginx -t     测试配置文件
