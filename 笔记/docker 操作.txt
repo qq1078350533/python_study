@@ -5,7 +5,15 @@ docker images  查看所有镜像
 docker rm mysql或者(id)   删除容器
 docker rmi   mysql或者(id)   删除镜像
 docker stop  mysql  停止容器
-
+service  docker start  启动docker
+/var/lib/docker/   资源目录
+docker image pull nginx  拉取镜像
+docker search nginx   搜索镜像
+docker tag nginx:latest nginx:0.0.1  改名
+docker save -o nginx.tar nginx  打包镜像
+docker load -i nginx.tar  导入打包好得镜像
+docker image history nginx:0.0.1  查看镜像的操作日志
+docker image inspect nginx:0.0.1  查看镜像的详情
 
 
 打包镜像
