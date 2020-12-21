@@ -10,10 +10,11 @@ service  docker start  启动docker
 docker image pull nginx  拉取镜像
 docker search nginx   搜索镜像
 docker tag nginx:latest nginx:0.0.1  改名
-docker save -o nginx.tar nginx  打包镜像
+docker save -o nginx.tar nginx  将镜像文件打包成压缩包
 docker load -i nginx.tar  导入打包好得镜像
 docker image history nginx:0.0.1  查看镜像的操作日志
 docker image inspect nginx:0.0.1  查看镜像的详情
+docker commit 容器名 镜像名  将容器打包成镜像
 
 
 打包镜像
@@ -26,7 +27,7 @@ docker image inspect nginx:0.0.1  查看镜像的详情
 		RUN pip install -r requirements.txt -i http://server.lan:7000/simple/ --trusted-host server.lan
 		CMD ["python", "/code/manage.py", "runserver", "0.0.0.0:8080"]
 	编译成镜像
-	sudo docker build -t 镜像名字:版本号 -f Dockerfile .    解释 .是dockerfile的路径
+	sudo docker build -t 镜像名字:版本号 .    解释 .是dockerfile的路径
 	运行镜像
 	sudo docker run --name 容器名字 -p 8080:8080 镜像名    解释： -p 8080是为了映射端口
 
