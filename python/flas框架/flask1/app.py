@@ -2,12 +2,15 @@ from flask import Flask
 from flask import request
 from flask import render_template
 
+import setting
+
 app = Flask(__name__)
+app.config.from_object(setting)
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
+@app.route('/<wqee>')
+def hello_world(wqee):
+    return 'Hello World!' + wqee
 
 @app.route('/ajax',methods=["get","post"])
 def hello_world4():
@@ -38,5 +41,4 @@ def hello_world1():
     """
 
 if __name__ == '__main__':
-    app.run()
-
+    app.run(port=8080)

@@ -2837,5 +2837,3 @@ function pwd(pd) {
     return m.encrypt(pd);
 }
 
-a = pwd('111111')
-console.log(a)
