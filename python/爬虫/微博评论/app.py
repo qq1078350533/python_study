@@ -5,14 +5,7 @@ import pymongo
 
 client = pymongo.MongoClient('mongodb://admin:123456@192.168.86.128:27017')
 
-headers = {
-            "X-Sessionid": "1f916240-29b0-4d85-b7fa-056cad7f5e52",
-            "Authorization": "WB-SUT _2A95y5dbyDeRxGeNG41IW9CnEzDyIHXVvs206rDV6PUJbkdANLUb5kWpNSwhjTmhyfM7-l8kfbCvSIuDOS1fzpu-o",
-            "accept-language": "zh-CN,zh;q=0.9",
-            "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",
-            "referer": "https://m.weibo.cn/detail/4485613145089303",
-            "cookie": "WEIBOCN_FROM=1110005030; SUB=_2A25zeaLSDeRhGeNG41IW9CnEzDyIHXVQhc6arDV6PUJbkdAKLWnskW1NSwhjThESwIEYhgr4VhduwRl_bJaHXlPQ; SUHB=0mxkC0BeDArx0U; _T_WM=87866313336; MLOGIN=1; XSRF-TOKEN=882a81; M_WEIBOCN_PARAMS=oid%3D4485613145089303%26luicode%3D20000061%26lfid%3D4485613145089303"
-        }
+headers = {}
 
 max_id = "0"
 page = 1
