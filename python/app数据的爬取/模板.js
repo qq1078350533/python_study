@@ -32,10 +32,7 @@
             send(result);
             return result;
             };
-        });
-    }
-
-    //hook重载方法
+        });//hook重载方法
     if(Java.available) {
         Java.perform(function () {
             // 这是包名（文件名）
@@ -52,6 +49,9 @@
             };
         });
     }
+    }
+
+
 
     //hook构造对象参数
     if(Java.available) {

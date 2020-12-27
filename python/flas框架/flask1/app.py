@@ -10,7 +10,7 @@ app.config.from_object(setting)
 
 @app.route('/<wqee>')
 def hello_world(wqee):
-    return 'Hello World!' + wqee
+    return 'snackdeng:' + wqee
 
 @app.route('/ajax',methods=["get","post"])
 def hello_world4():
@@ -39,6 +39,10 @@ def hello_world1():
         <input type="submit">
     </form>
     """
+
+@app.route('/')
+def a():
+    return "晚安 爱你哟娟宝宝"
 
 if __name__ == '__main__':
     app.run(port=8080)

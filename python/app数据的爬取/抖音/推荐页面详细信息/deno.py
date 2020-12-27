@@ -12,29 +12,44 @@ from pymysql import *
 # 普通版
 
 
-def persom():
-    web_url = "http://127.0.0.1:5000/dy"
-    response = requests.get(web_url).json()
-    url = response["url"]
-    data = json.loads(response["res"])
-    gorgon = data["X-Gorgon"]
-    khronos = data['X-Khronos']
-    return url,gorgon, khronos
+def persom(url):
+    web_url = "http://121.4.112.180:6081/dy/x_g"
+    data = {"url": url}
+    response = requests.post(web_url, data=data).json()
+    x_g = response["X-Gorgon"]
+    khronos = response['X-Khronos']
+    print(x_g,khronos)
+    return x_g, khronos
 
 
-def get_res(lists):
+def get_res():
+    ts = int(time.time())
+    ts13 = int(time.time()*1000)
+    url = "https://api3-core-c-lq.amemv.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&pull_type=1" \
+          "&need_relieve_aweme=0&filter_warn=0&is_cold_start=0&longitude=121.492479&latitude=31.247221&address_book_access=2&" \
+          "gps_access=1&cached_item_num=0&last_ad_show_interval=-1&mac_address=a6%3A1a%3A85%3Ae0%3Aa5%3A2a&" \
+          f"download_sdk_info=%7B%22space_unoccupied%22%3A6555580%7D&action_mask=-1&ts={ts}&_rticket={ts13}&mcc_mnc=46000&"
+    v2 = "os_api=22&device_platform=android&device_type=G011C&iid=2444963526752767&version_code=100400&app_name=aweme&" \
+         "openudid=3088d1878c5bc3af&device_id=1371797751605166&os_version=5.1.1&aid=1128&channel=tengxun_new&ssmix=a&" \
+         "manifest_version_code=100401&dpi=192&cdid=9fe11d79-5806-4a80-be42-f95a24ad910a&version_name=10.4.0&" \
+         "resolution=720*1280&language=zh&device_brand=google&app_type=normal&ac=wifi&update_version_code=10409900&uuid=865235319692220"
+    x_g, khronos = persom(url+v2)
     headers = {
-        "Host": "aweme-eagle.snssdk.com",
-        "Connection": "keep-alive",
-        "Cookie": "install_id=3394909373733624; ttreq=1$3c993b978519b6e1c0b075a550087de3c5e86c23; odin_tt=98f8553e5be0b8d9652384f0b2351cca593d4a11a7ec78c37caaab10934919db5a0d9e516df94db4b28fdac7216aa5493e0d6e83b94f563163fab5ffde854e16; qh[360]=1",
-        "Accept-Encoding": "gzip",
-        "sdk-version": "1",
-        "User-Agent": "com.ss.android.ugc.aweme/670 (Linux; U; Android 5.1; zh_CN; Nexus 6; Build/LMY47I; Cronet/58.0.2991.0)",
-        "X-Gorgon": lists[1],
-        "X-Khronos": lists[2],
-        "X-Pods": "",
+        'Host': 'api3-core-c-lq.amemv.com',
+        'Connection': 'keep-alive',
+        'Cookie': 'install_id=2444963526752767; ttreq=1$548c71d9588c20a414828f20abf7ad9fd098a173; odin_tt=13a0af4dc2522d474584b02103ee05dafe51896d7df6ab29fe559f5d435b8a8941f05c2bed505c465413a93e923c29bb877388bd51508a0f964cd48b6374f769',
+        'X-SS-REQ-TICKET': f'{ts13}',
+        'sdk-version': '1',
+        'X-SS-DP': '1128',
+        # 'x-tt-trace-id': '00-9e0b8cd10d4dfa48db027ae97b750468-9e0b8cd10d4dfa48-01',
+        'User-Agent': 'com.ss.android.ugc.aweme/100401 (Linux; U; Android 5.1.1; zh_CN; G011C; Build/LMY48Z; Cronet/TTNetVersion:3154e555 2020-03-04 QuicVersion:8fc8a2f3 2020-03-02)',
+        'Accept-Encoding': 'gzip, deflate',
+        'X-Gorgon': x_g,
+        'X-Khronos': f"{ts}",
+        'x-common-params-v2': v2,
     }
-    response = requests.get(lists[0], headers=headers, verify=False)
+    response = requests.get(url, headers=headers)
+    print(response.text)
     return response.json()
 
 def get_date(text):
@@ -56,6 +71,7 @@ def get_date(text):
             "userid": userid,
         }
         items.append(item)
+        print(item)
     return (items)
 
 def get_mongdb(items):
@@ -89,9 +105,9 @@ def get_mysql(items):
 
 
 if __name__ == '__main__':
-    while True:
-        lists = persom()
-        text = get_res(lists)
+    # while True:
+        # lists = persom()
+        text = get_res()
         items = get_date(text)
         # get_mongdb(items)
-        get_mysql(items)
+        # get_mysql(items)
