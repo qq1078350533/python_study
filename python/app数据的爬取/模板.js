@@ -91,19 +91,23 @@
 
 
 //hook native层
+        //基址
+        var sha1InputAddr = soAddr.add(0x1744 + 1);
+        var resultPtr="";
 if(Java.available) {
     Java.perform(function(){
         // 加载的so文件
         var soAddr = Module.findBaseAddress("libtre.so");
         send('soAddr: ' + soAddr);
-        //基址
-        var sha1InputAddr = soAddr.add(0x1744 + 1);
-        var resultPtr="";
         send('sha1InputAddr: ' + sha1InputAddr);
         Interceptor.attach(sha1InputAddr, {
             onEnter: function(args){
-                var buffer = Memory.readByteArray(args[1], 1000);
-                console.log("明文",buffer);
+                // var buffer = Memory.readByteArray(args[1], 1000);
+                // console.log("明文",buffer);
+                send(args[1]);
+            },
+            onLeavec: function (retval) {
+                console.log(retval);
             }
         });
     });
