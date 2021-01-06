@@ -1,3 +1,5 @@
+//  http://learn.open.com.cn/
+
 window = global;
 function oQo0o() {
     // O0Q00["blackBox"] = {},
