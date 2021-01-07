@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 @author: snackdeng
-@file: demo.py
+@file: demo.js
 @time: 2020/8/25 14:23
 @desc: app版本：2.3
 """
