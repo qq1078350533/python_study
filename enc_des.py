@@ -14,7 +14,7 @@ import binascii
 
 import rsa
 from Cryptodome.Cipher import AES
-from pyDes import des, CBC, PAD_PKCS5
+from pyDes import des, CBC, PAD_PKCS5, ECB
 from Cryptodome.Cipher import DES3
 import hashlib
 import hmac
@@ -172,7 +172,7 @@ class USE_DES:
             text = bytes(text, "utf-8")
         secret_key = self.key
         iv = self.iv
-        k = des(secret_key, CBC, iv, pad=None, padmode=PAD_PKCS5)
+        k = des(secret_key, ECB, pad=None, padmode=PAD_PKCS5)
         en = k.encrypt(text, padmode=PAD_PKCS5)
         return binascii.b2a_hex(en)
 
@@ -257,16 +257,16 @@ def USE_SHA(text):
 
 
 if __name__ == '__main__':
-    aes_test = USE_AES("assssssssdfasasasasa")
-    a = aes_test.encrypt("测试")
+    aes_test = USE_AES("YZ_AES_KEY")
+    a = aes_test.encrypt("qwertyuiop")
     b = aes_test.decodebytes(a)
     print(a,b)
     rsa_test = USE_RSA()
-    a = rsa_test.rsaEncrypt("测试加密")
+    a = rsa_test.rsaEncrypt("1411093327735111123456")
     b = rsa_test.rsaDecrypt(a)
     print(a, b)
-    des_test = USE_DES(b"12345678", b"12345678")
-    a = des_test.encrypt("测试加密")
+    des_test = USE_DES(b"e9284d45-cf2a-4e46-9367-f122413ca6b0")
+    a = des_test.encrypt("123456")
     b = des_test.descrypt(a)
     print(a, b)
     des3_test = USE_DES3(b"123456789qazxswe")

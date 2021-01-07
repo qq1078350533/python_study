@@ -1,0 +1,173 @@
+<!doctype html><html lang="zh-cn"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/><link rel="icon" href="data:image/ico;base64,aWNv"><title>captcha verify</title></head><body><div id="captcha_container"></div><script src="https://sf1-scmcdn-tos.pstatp.com/goofy/secsdk-captcha/cn2/2.16.6/captcha.js"></script></body><script>function parseURL(qs) {
+      var obj = {};
+      if (typeof qs !== 'string' || qs.length === 0) {
+        return obj;
+      }
+      var regexp = /\+/g;
+      qs = qs.split('&');
+      var len = qs.length;
+      for (var i = 0; i < len; ++i) {
+        var x = qs[i].replace(regexp, '%20'),
+            idx = x.indexOf('='),
+            kstr, vstr, k, v;
+        if (idx >= 0) {
+          kstr = x.substring(0, idx);
+          vstr = x.substring(idx + 1, x.length);
+        }
+        k = decodeURIComponent(kstr);
+        v = decodeURIComponent(vstr);
+        obj[k] = v;
+      }
+      return obj;
+    };
+    var queryObj = parseURL(window.location.search.slice(1));
+    // challenge_code: 3059, // 3059 文字点选
+    // autoClose: false, // 反馈提交之后是否自动关闭验证码，默认自动，设置false，不自动关闭
+    // disableSetBodyHidden: true 是否禁止给body添加overfollow: hidden; 默认不禁止
+    var options = {
+      // fp: '22221111333344fff', // 支持业务方直传fp,覆盖本地生成的fp
+      challenge_code: +queryObj.challenge_code || 3058, // 99996 旋转验证码
+      // showMode: 'mask', // 是否自带遮罩
+      // aid: 24,
+      aid: 1128,
+      iid: '0',
+      did: '0',
+      // region: 'in',
+      host: queryObj.verify_host,
+      verify_data: queryObj.verify_data,
+      // lang: queryObj.lang || 'zh', // 'ru-RU'
+      successCb: function(result){
+        // console.log("successCb", result);
+      },
+      errorCb: function(error){
+        // console.log("errorCb", error);
+      },
+      closeCb: function(){
+        // console.log("closeCb");
+      },
+      feedbackSubmitCb: function(){
+        // console.log("feedbackSubmitCb");
+      },
+    };
+    var captchaTheme = {};
+    // var secondVerifyWebTheme = {};
+    var secondVerifyH5Theme = {
+      // bgcolor: '#f00',
+      // fontSize: '12px'
+    };
+    if(queryObj.theme){
+      try{
+        captchaTheme = JSON.parse(queryObj.theme);
+        options.theme = captchaTheme;
+
+      }catch(err){};
+    }
+    window.initVerifyOptions({
+      commonOptions: {
+        aid: 1128,
+        iid: '0',
+        did: '0',
+        // fp: '22221111333344fff', // 支持业务方直传fp,覆盖本地生成的fp
+      },
+      captchaOptions: {
+        host: queryObj.verify_host,
+        // lang: queryObj.lang || 'zh', // 'ru-RU'
+        theme: captchaTheme,
+        successCb: function(result){
+        // console.log("successCb", result);
+        },
+        errorCb: function(error){
+          // console.log("errorCb", error);
+        },
+        closeCb: function(){
+          // console.log("closeCb");
+        },
+        feedbackSubmitCb: function(){
+          // console.log("feedbackSubmitCb");
+        },
+      },
+      secondVerifyWebOptinos: {
+        // theme: secondVerifyWebTheme,
+        // 帐号，用于展示
+        // account: '183287216511',
+        scene: 'xxx', // 场景名，方便埋点统计
+        // appid
+        // aid: 1991,
+        // 验证成功后的回调
+        callBack: (res) => {
+          console.log(res);
+        },
+        //关闭验证sdk的回调
+        closeCallBack: () => {
+          console.log('close');
+        },
+        commonParams: { webId: 12333 } // 请求传输的通参
+      },
+      // aid=13&scene=global_payment&use_by_native_shell=0&locale=en&redirect_url=www.baidu.com&decision_config=pwd_verify
+      secondVerifyH5Optinos: {
+        bHost: '', // 业务方域名
+        theme: secondVerifyH5Theme,
+        scene: 'global_payment', // 业务方的标识，直接带上就可以了; scene值可以询问@张美宏，标识业务方
+        locale: 'en', // 国际化参数，值为starling上标准的国外标识 zh/en等等
+        redirect_url: 'www.baidu.com', // 验证结束后跳转的url，url必须encode
+      }
+    })
+    const verify_data = {
+        // "code":"10000",
+        "code":"20000",
+        "from": "shark_admin",
+        "type": "verify",
+        "version": "1",
+        "region":"sg",
+        // "subtype": "3d",
+        "subtype": "email_verify",
+        // "subtype": "mobile_sms_verify",
+        "verify_event":"xxx",
+        "fp": "verify_asdadsa121",
+        "scene":"xxx",
+        "detail": {
+                "punish_duration": 6,
+                "exempt_duration": 6,
+                "error_code": "1,1105",
+                "aid": 1128,
+                "did":123,
+                "iid":456,
+                "psm":"x.y.z",
+                "path":"/v1/digg/"
+        },
+        "verify_ticket": "xyz",
+        "channel_mobile":"xxxx",
+        "sms_content":"xxxx",
+        "mobile": "138****9104",
+        "email": "133****722@qq.com"
+    };
+    // window.renderCaptcha(options);
+
+    // window.verifySDK.autoRender({verify_data});
+    // window.verifySDK.renderCaptcha({verify_data});
+
+    window.renderCaptcha({
+      challenge_code: +queryObj.challenge_code || 3058,
+      verify_data: queryObj.verify_data,
+      // verify_data,
+    });
+
+    // window.verifySDK.renderSecondVerifyWeb({verify_data}); // 透传风控返回的shark_event,
+    // window.verifySDK.renderSecondVerifyWeb({
+    //   decision: 3062
+    // }); // 透传风控返回的shark_event,
+    // window.verifySDK.renderSecondVerifyH5({decision: 'pwd_verify'});
+    // window.verifySDK.renderSecondVerifyH5({verify_data});
+
+    // var createElem = document.getElementById('create_btn');
+    // var closeElem = document.getElementById('close_btn');
+    // createElem.onclick = function () {
+    //   window.renderCaptcha({
+    //     aid: 1128,
+    //     iid: '0',
+    //     did: '0',
+    //   });
+    // }
+    // closeElem.onclick = function () {
+    //   window.closeCaptcha();
+    // }</script></html>
