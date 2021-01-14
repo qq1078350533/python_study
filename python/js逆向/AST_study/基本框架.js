@@ -7,7 +7,7 @@ const t = require("@babel/types");
 const generator = require("@babel/generator").default;
 
 
-let jscode = fs.readFileSync("./demo.js", {
+let jscode = fs.readFileSync("./内容.js", {
     encoding: "utf-8"
 });
 let ast = parse(jscode);

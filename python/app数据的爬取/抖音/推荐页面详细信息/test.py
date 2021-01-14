@@ -43,20 +43,21 @@ def stub():
     return json.dumps({"stub": stub})
 
 
-@app.route('/dy')
+@app.route('/dy/x_g', methods=['POST'])
 def x_g():
-    # url = request.form.get('url')  # 获取 JOSN 数据
+    url = request.form.get('url')  # 获取 JOSN 数据
     # url = data.get('url')
     ts = str(int(time.time()))
     rict = str(int(time.time() * 1000))
     #浏览器访问不建议用get，会进行urlencode
-    url = "https://api3-core-c-hl.amemv.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=1&" \
-          "need_relieve_aweme=0&filter_warn=0&is_cold_start=0&longitude=0&latitude=0&address_book_access=2&gps_access=2&" \
-          "cached_item_num=0&last_ad_show_interval=-1&mac_address=F8%3ACF%3AC5%3A88%3A7E%3A68&download_sdk_info=%7B%22space_unoccupied%22%3A14411708%7D&" \
-          f"action_mask=-1&_rticket={rict}&ts={ts}&os_api=29&device_platform=android&device_type=Nexus%206&iid=4081042835637495&" \
-          f"version_code=100400&app_name=aweme&openudid=34eb43c4566a9259&device_id=404271713747624&os_version=10&aid=1128&" \
-          f"channel=tengxun_new&ssmix=a&manifest_version_code=100401&dpi=560&cdid=100e3f47-b4ba-47b7-b1dd-7427a9766c93&" \
-          f"version_name=10.4.0&resolution=1440*2392&language=zh&device_brand=google&app_type=normal&ac=wifi&update_version_code=10409900"
+    # url = f"https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.73&pull_type=4&" \
+    #       f"need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&longitude=0&latitude=0&address_book_access=2&" \
+    #       f"gps_access=1&cached_item_num=0&last_ad_show_interval=-1&preload_aweme_ids&" \
+    #       f"download_sdk_info=%7B%22space_unoccupied%22%3A15401468%7D&action_mask=-1&os_api=22&device_type=PCT-AL10&" \
+    #       f"device_platform=android&ssmix=a&manifest_version_code=110101&dpi=480&version_code=110100&app_name=aweme&" \
+    #       f"cdid=8cbdc9ae-4fdf-400f-952a-a157826fefba&version_name=11.1.0&ts={ts}&cpu_support64=false&resolution=1080*1920&" \
+    #       f"os_version=5.1.1&language=zh&device_brand=HUAWEI&app_type=normal&ac=wifi&host_abi=armeabi-v7a&" \
+    #       f"update_version_code=11109900&aid=1128&channel=tengxun_new&_rticket={rict}&mcc_mnc=46000"
     # url = request.args['url'] #
     res = script.exports.callsecretfunctionedy(url)
     print(res, url)

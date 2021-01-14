@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 @author: snackdeng
-@file: demo.js
+@file: 内容.js
 @time: 2020/9/4 16:47
 @desc: https://i.qq.com/
 """

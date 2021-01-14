@@ -17,11 +17,11 @@ import random,datetime,time
 # print(os.path.isdir("内置模块.py"))    #判断是否是文件夹
 # print(os.path.isfile("内置模块.py"))   #判断是否是文件
 # print(os.path.exists("内置模块.py"))   #判断文件是否存在
-# print(os.path.splitext("12.12.321.demo.js"))  #分割文件名和后缀
+# print(os.path.splitext("12.12.321.内容.js"))  #分割文件名和后缀
 # os.getcwd()                              #获取当前的工作目录，即当前python脚本工作的目录
 # os.chdir('demo')                         #改变当前脚本工作目录 相当于cmd中的cd
-# os.rename("demo.js","snackdeng.py")      #文件重命名
-# os.remove('demo.js')                     #删除文件
+# os.rename("内容.js","snackdeng.py")      #文件重命名
+# os.remove('内容.js')                     #删除文件
 # os.rmdir('demo')                         #删除空文件夹
 # os.removedirs('demo')                    #删除空文件夹
 # os.mkdir('demo')                         #创建文件夹

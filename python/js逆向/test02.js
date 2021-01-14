@@ -1,5 +1,5 @@
-// i = {url:process.argv[2]};
-i = {url:"https://www.toutiao.com/toutiao/api/pc/feed/?max_behot_time=1606377586&category=__all__&utm_source=toutiao&widen=1&tadrequire=true"};
+
+data = {"url":"https://sso.toutiao.com/toutiao/account_login/?mobile=&code=&account=13347878796&password=1234567890&captcha=euuu&is_30_days_no_login=false&service=https%3A%2F%2Fwww.wukong.com%2Fwenda%2Fwelcome%2F"}
 a = require('./test01.js');
 n = a.sign;
-console.log(n.call(a,i));
+console.log(n.call(a,data));

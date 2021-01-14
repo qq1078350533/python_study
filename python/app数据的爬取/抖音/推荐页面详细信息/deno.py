@@ -25,32 +25,47 @@ def persom(url):
 def get_res():
     ts = int(time.time())
     ts13 = int(time.time()*1000)
-    url = "https://api3-core-c-lq.amemv.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&pull_type=1" \
-          "&need_relieve_aweme=0&filter_warn=0&is_cold_start=0&longitude=121.492479&latitude=31.247221&address_book_access=2&" \
-          "gps_access=1&cached_item_num=0&last_ad_show_interval=-1&mac_address=a6%3A1a%3A85%3Ae0%3Aa5%3A2a&" \
-          f"download_sdk_info=%7B%22space_unoccupied%22%3A6555580%7D&action_mask=-1&ts={ts}&_rticket={ts13}&mcc_mnc=46000&"
-    v2 = "os_api=22&device_platform=android&device_type=G011C&iid=2444963526752767&version_code=100400&app_name=aweme&" \
-         "openudid=3088d1878c5bc3af&device_id=1371797751605166&os_version=5.1.1&aid=1128&channel=tengxun_new&ssmix=a&" \
-         "manifest_version_code=100401&dpi=192&cdid=9fe11d79-5806-4a80-be42-f95a24ad910a&version_name=10.4.0&" \
-         "resolution=720*1280&language=zh&device_brand=google&app_type=normal&ac=wifi&update_version_code=10409900&uuid=865235319692220"
-    x_g, khronos = persom(url+v2)
+    url = "https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.73&pull_type=4&" \
+          "need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&longitude=0&latitude=0&address_book_access=2&" \
+          "gps_access=1&cached_item_num=0&last_ad_show_interval=-1&preload_aweme_ids&" \
+          "download_sdk_info=%7B%22space_unoccupied%22%3A15401468%7D&action_mask=-1&os_api=22&device_type=PCT-AL10&" \
+          "device_platform=android&ssmix=a&manifest_version_code=110101&dpi=480&version_code=110100&app_name=aweme&" \
+          f"cdid=8cbdc9ae-4fdf-400f-952a-a157826fefba&version_name=11.1.0&ts={ts}&cpu_support64=false&resolution=1080*1920" \
+          f"&os_version=5.1.1&language=zh&device_brand=HUAWEI&app_type=normal&ac=wifi&host_abi=armeabi-v7a&" \
+          f"update_version_code=11109900&aid=1128&channel=tengxun_new&_rticket={ts13}&mcc_mnc=46000"
+    x_g, khronos = persom(url)
     headers = {
-        'Host': 'api3-core-c-lq.amemv.com',
-        'Connection': 'keep-alive',
-        'Cookie': 'install_id=2444963526752767; ttreq=1$548c71d9588c20a414828f20abf7ad9fd098a173; odin_tt=13a0af4dc2522d474584b02103ee05dafe51896d7df6ab29fe559f5d435b8a8941f05c2bed505c465413a93e923c29bb877388bd51508a0f964cd48b6374f769',
+        'Accept-Encoding': 'gzip',
         'X-SS-REQ-TICKET': f'{ts13}',
         'sdk-version': '1',
-        'X-SS-DP': '1128',
-        # 'x-tt-trace-id': '00-9e0b8cd10d4dfa48db027ae97b750468-9e0b8cd10d4dfa48-01',
-        'User-Agent': 'com.ss.android.ugc.aweme/100401 (Linux; U; Android 5.1.1; zh_CN; G011C; Build/LMY48Z; Cronet/TTNetVersion:3154e555 2020-03-04 QuicVersion:8fc8a2f3 2020-03-02)',
-        'Accept-Encoding': 'gzip, deflate',
         'X-Gorgon': x_g,
-        'X-Khronos': f"{ts}",
-        'x-common-params-v2': v2,
+        'X-Khronos': f'{khronos}',
+        'Host': 'aweme.snssdk.com',
+        'Connection': 'Keep-Alive',
+        'User-Agent': 'okhttp/3.10.0.1',
     }
     response = requests.get(url, headers=headers)
     print(response.text)
-    return response.json()
+    # return response.json()
+
+
+def near():
+    ts = int(time.time())
+    ts13 = int(time.time() * 1000)
+    url = f"https://aweme.snssdk.com/aweme/v1/nearby/feed/?max_cursor=0&min_cursor=0&count=20&feed_style=1&filter_warn=0&city=430100&latitude&longitude&poi_class_code=0&pull_type=1&location_permission=1&nearby_distance=0&roam_city_name&insert_fresh_aweme_ids&insert_fresh_type=0&os_api=22&device_type=PCT-AL10&ssmix=a&manifest_version_code=110101&dpi=480&uuid=865166023858478&app_name=aweme&version_name=11.1.0&ts={ts}&cpu_support64=false&app_type=normal&ac=wifi&host_abi=armeabi-v7a&update_version_code=11109900&channel=tengxun_new&_rticket={ts13}&device_platform=android&iid=2779221194717127&version_code=110100&cdid=8cbdc9ae-4fdf-400f-952a-a157826fefba&openudid=c10e8fb00589a8c4&device_id=66067276680&resolution=1080*1920&os_version=5.1.1&language=zh&device_brand=HUAWEI&aid=1128&mcc_mnc=46000"
+    x_g, khronos = persom(url)
+    headers = {
+        'Accept-Encoding': 'gzip',
+        'X-SS-REQ-TICKET': f'{ts13}',
+        'sdk-version': '1',
+        'X-Gorgon': x_g,
+        'X-Khronos': f'{khronos}',
+        'Host': 'aweme.snssdk.com',
+        'Connection': 'Keep-Alive',
+        'User-Agent': 'okhttp/3.10.0.1',
+    }
+    response = requests.get(url, headers=headers)
+    print(response.text)
 
 def get_date(text):
     lists = text['aweme_list']
@@ -107,7 +122,8 @@ def get_mysql(items):
 if __name__ == '__main__':
     # while True:
         # lists = persom()
-        text = get_res()
-        items = get_date(text)
+        # text = get_res()
+        near()
+        # items = get_date(text)
         # get_mongdb(items)
         # get_mysql(items)
